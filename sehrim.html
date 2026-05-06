@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efe Ersoy - Şehrim (Edirne)</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigasyon -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Efe Ersoy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sehrim.html">Şehrim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- İçerik Alanı -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Memleketim: Edirne</h1>
+
+        <div class="row">
+            <!-- Sol Taraf: Tanıtıcı Bilgiler -->
+            <div class="col-md-5 mb-4">
+                <h3>Genel Bilgiler</h3>
+                <p><strong>Nüfus:</strong> Yaklaşık 430.000</p>
+                <p>Türkiye'nin Avrupa'ya açılan kapısı olan Edirne, tarihi dokusu, eşsiz mimarisi ve kültürel zenginlikleriyle öne çıkan kadim bir şehirdir. Osmanlı İmparatorluğu'na başkentlik yapmış bu güzel şehir, her köşesinde tarihten bir iz taşır.</p>
+                
+                <h4 class="mt-4">Gezilecek Yerler</h4>
+                
+    <ul class="list-group list-group-flush shadow-sm">
+        <li class="list-group-item">Selimiye Camii (Mimar Sinan'ın Ustalık Eseri)</li>
+        <li class="list-group-item">Saraçlar Caddesi</li>
+        <li class="list-group-item">Uzunköprü</li>
+        <li class="list-group-item">Karaağaç Eski Tren Garı</li>
+        <li class="list-group-item">II. Bayezid Külliyesi Sağlık Müzesi</li>
+        <li class="list-group-item">Eski Cami (Ulu Cami)</li>
+        <li class="list-group-item">Ali Paşa Çarşısı</li>
+        <li class="list-group-item">Rüstem Paşa Kervansarayı</li>
+</ul>
+                </ul>
+            </div>
+
+            <!-- Sağ Taraf: 4 Resimli Tıklanabilir Slider -->
+            <div class="col-md-7">
+                <div id="edirneSlider" class="carousel slide shadow rounded" data-bs-ride="carousel">
+                    
+                    <!-- Alt Kısımdaki Çizgi Göstergeler -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#edirneSlider" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#edirneSlider" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#edirneSlider" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#edirneSlider" data-bs-slide-to="3"></button>
+                    </div>
+
+                    <!-- Slider Resimleri (En az 4 adet) -->
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="images/edirne1.jpg" class="d-block w-100" alt="Selimiye Camii">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/edirne2.jpg" class="d-block w-100" alt="Meriç Köprüsü">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/edirne3.png" class="d-block w-100" alt="Karaağaç">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/edirne4.jfif" class="d-block w-100" alt="Edirne Sokakları">
+                        </div>
+                    </div>
+
+                    <!-- İleri / Geri Tıklama Butonları -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#edirneSlider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Önceki</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#edirneSlider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Sonraki</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5 py-3 text-muted">
+        <p>&copy; 2026 Efe Ersoy - Web Teknolojileri Proje Ödevi</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
