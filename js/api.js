@@ -24,7 +24,7 @@ filmler.forEach(filmAdi => {
     fetch(`https://www.omdbapi.com/?t=${encodeURIComponent(filmAdi)}&apikey=${apiKey}`)
         .then(response => response.json())
         .then(film => {
-            // Eğer API filmi başarıyla bulduysa (Response === "True") ekrana bas
+            // Eğer API filmi başarıyla bulduysa ekrana bas
             if (film.Response === "True") {
                 const cardCol = document.createElement('div');
                 cardCol.className = 'col-md-3 mb-4'; 

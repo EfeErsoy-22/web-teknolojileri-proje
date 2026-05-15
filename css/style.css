@@ -1,0 +1,13 @@
+/* PC Ekranları İçin Sabit Boy */
+.slider-resim {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Telefon Ekranları */
+@media (max-width: 768px) {
+    .slider-resim {
+        height: 250px;
+    }
+    
+}

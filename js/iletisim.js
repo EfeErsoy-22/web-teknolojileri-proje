@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", function() {
         form.reset();
     });
 
-    // 2. Native JS ile Validasyon (Doğrulama) İşlemi
+    // 2. Native JS ile Doğrulama İşlemi
     btnGonderNative.addEventListener("click", function() {
         let hataMesaji = "";
         
-        // Formdaki değerleri alıp başındaki/sonundaki boşlukları siliyoruz (trim)
+        // Formdaki değerleri alıp başındaki/sonundaki boşlukları siler
         const isim = document.getElementById("isim").value.trim();
         const email = document.getElementById("email").value.trim();
         const konu = document.getElementById("konu").value;
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (hataMesaji !== "") {
             alert("Lütfen formdaki eksiklikleri giderin:\n\n" + hataMesaji);
         } else {
-            // Her şey tamamsa formu çalıştır (islem.php sayfasına post et)
+            // Her şey tamamsa formu çalıştır ve PHP'ye gönder
             form.submit();
         }
     });
